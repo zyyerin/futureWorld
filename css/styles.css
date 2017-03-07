@@ -1,0 +1,133 @@
+body {
+    background-color: #f6f6f6;
+    font-family: Helvetica;
+    color: #252525;
+}
+
+h1 {
+    font-family: Georgia;
+    font-size: 1.8em;
+    font-weight: normal;
+    padding-bottom: .2em;
+    border-bottom: 1px solid silver;
+}
+
+.footer {
+    font-size: 0.7em;
+    width: 82vw;
+    margin: -2em auto 6em auto;
+}
+
+h2 {
+    margin-top: -1%;
+    font-size: .805em;
+    font-weight: normal;
+    letter-spacing: -.01em;
+}
+
+.container {
+    overflow: hidden;
+    width: 77vw;
+    height: auto;
+    margin: 5% auto 5% auto;
+    padding: 2.5em;
+    background-color: white;
+    border: 1px solid #a7d7f9;
+    font-size: .875em;
+    line-height: 1.8;
+}
+
+.container2 {
+    width: 60%;
+    position: relative;
+    float: left;
+    display: inline-block;
+    margin-top: -1.6em;
+}
+
+.nav {
+    width: 250px;
+    height: auto;
+    background: #f6f6f6;
+    border: 1px solid #a2a9b1;
+    float: left;
+    display: inline-block;
+    clear: left;
+}
+
+.thumb {
+    width: 38%;
+    height: auto;
+    position: relative;
+    float: right;
+    display: inline-block;
+    font-family: Helvetica;
+    font-size: .875em;
+    line-height: 1.8;
+    background-color: #f8f9fa;
+    border: 1px solid #c8ccd1;
+    text-align: center;
+}
+
+.thumb p {
+    margin-top: -.2em;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 90%;
+}
+
+section {
+    clear: left;
+    padding-top: 1em;
+}
+
+section p {
+    width: 60%;
+}
+
+img {
+    width: 95%;
+    padding: 2% 2% 0 2%;
+}
+
+.introduction {
+    width: 95%;
+    float: right;
+    margin-top: 3%;
+}
+
+a {
+    text-decoration: none;
+    color: #0645ad;
+    cursor: pointer;
+}
+
+a:visited {
+    color: #663366;
+}
+
+[tooltip]:before {
+    /* needed - do not touch */
+    content: attr(tooltip);
+    position: absolute;
+    opacity: 0;
+
+    /* customizable */
+    transition: all 0.3s ease;
+    transition-delay: .3s;
+    padding: .6em .5em .6em 1em;
+    color: #333;
+    border: 2px solid #000000;
+    font-size: .9em;
+    min-width: 200px;
+    max-width: 400px;
+    height: 3.5em;
+}
+
+[tooltip]:hover:before {
+    /* needed - do not touch */
+    opacity: 1;
+    /* customizable */
+    background:  #f7f7f7;
+    margin-top: -5em;
+}
